@@ -105,7 +105,7 @@
    </properties>
   </tile>
  </tileset>
- <imagelayer name="Background">
+ <imagelayer name="Background" visible="0">
   <image source="../images/bg.png"/>
  </imagelayer>
  <layer name="Collision" width="200" height="20">
@@ -944,10 +944,10 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1131,19 +1131,19 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1326,12 +1326,12 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1524,8 +1524,8 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1720,11 +1720,11 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="63"/>
+   <tile gid="63"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1919,7 +1919,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="4"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -2317,7 +2317,7 @@
    <tile gid="0"/>
    <tile gid="82"/>
    <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="4"/>
    <tile gid="73"/>
    <tile gid="73"/>
    <tile gid="0"/>
@@ -2535,9 +2535,9 @@
    <tile gid="104"/>
    <tile gid="104"/>
    <tile gid="104"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
+   <tile gid="27"/>
    <tile gid="129"/>
    <tile gid="104"/>
    <tile gid="104"/>
@@ -4115,7 +4115,7 @@
    <tile gid="0"/>
   </data>
  </layer>
- <objectgroup name="Doors">
+ <objectgroup name="Doors" visible="0">
   <object gid="214" x="1190" y="840">
    <properties>
     <property name="id" value="door-1"/>
@@ -4129,7 +4129,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Sprites">
+ <objectgroup name="Sprites" visible="0">
   <object gid="157" x="235" y="820"/>
   <object gid="176" x="1120" y="1120"/>
   <object gid="176" x="1190" y="1120"/>
