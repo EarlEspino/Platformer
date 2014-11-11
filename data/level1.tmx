@@ -45,12 +45,17 @@
   </properties>
   <image source="../images/moon.jpeg" width="204" height="204"/>
  </tileset>
- <tileset firstgid="34" name="collectables" tilewidth="936" tileheight="216">
-  <tile id="0">
-   <image width="936" height="216" source="../images/collectables.png"/>
+ <tileset firstgid="34" name="collectables" tilewidth="72" tileheight="72">
+  <image source="../images/collectables.png" width="936" height="216"/>
+  <tile id="11">
+   <properties>
+    <property name="Class" value="Collectable"/>
+    <property name="amount" value="50"/>
+    <property name="sprite" value="star"/>
+   </properties>
   </tile>
  </tileset>
- <imagelayer name="Background" x="33" y="136">
+ <imagelayer name="Background" x="25" y="136">
   <image source="../images/space.jpg"/>
  </imagelayer>
  <layer name="Collision" width="200" height="20">
@@ -4060,25 +4065,14 @@
    <tile gid="0"/>
   </data>
  </layer>
- <objectgroup name="Doors" visible="0">
-  <object gid="19" x="1190" y="840">
-   <properties>
-    <property name="id" value="door-1"/>
-    <property name="link" value="door-2"/>
-   </properties>
-  </object>
-  <object gid="19" x="980" y="1190">
-   <properties>
-    <property name="id" value="door-2"/>
-    <property name="link" value="door-1"/>
-   </properties>
-  </object>
- </objectgroup>
+ <objectgroup name="Doors"/>
  <objectgroup name="Sprites">
   <object gid="1" x="235" y="820"/>
-  <object gid="21" x="630" y="840"/>
-  <object gid="22" x="1050" y="1190"/>
-  <object gid="23" x="1110" y="842"/>
-  <object gid="22" x="2170" y="839"/>
+  <object gid="45" x="1135.24" y="690.281"/>
+  <object gid="45" x="1292.76" y="678.165"/>
+  <object gid="45" x="279.024" y="1069.93"/>
+  <object gid="45" x="388.071" y="1061.85"/>
+  <object gid="45" x="359.8" y="1069.93"/>
+  <object gid="45" x="331.528" y="1065.89"/>
  </objectgroup>
 </map>
