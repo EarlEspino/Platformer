@@ -61,7 +61,7 @@
   </properties>
   <image source="../images/moon.jpeg" width="204" height="204"/>
  </tileset>
- <imagelayer name="Background" x="42" y="33">
+ <imagelayer name="Background" x="48" y="39">
   <image source="../images/space.jpg"/>
  </imagelayer>
  <layer name="Collision" width="200" height="20">
@@ -4107,5 +4107,9 @@
   <object gid="61" x="1050" y="1190"/>
   <object gid="62" x="1110" y="842"/>
   <object gid="61" x="2170" y="839"/>
+  <object x="629.576" y="977.576" width="70" height="70"/>
+  <object x="1012.12" y="818.182"/>
+  <object x="1085.33" y="804" width="1.33333"/>
+  <object gid="30" x="630.333" y="1056.33"/>
  </objectgroup>
 </map>
