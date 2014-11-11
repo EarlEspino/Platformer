@@ -15,7 +15,7 @@ window.addEventListener("load",function() {
 var Q = window.Q = Quintus({audioSupported: [ 'wav','mp3','ogg' ]})
         .include("Sprites, Scenes, Input, 2D, Anim, Touch, UI, TMX, Audio")
         // Maximize this game to whatever the size of the browser is
-        .setup({ maximize: true })
+        .setup({ scaleToFit: true, maximize: true })
         // And turn on default input controls and touch input (for UI)
         .controls(true).touch()
         // Enable sounds.
@@ -227,7 +227,7 @@ Q.Sprite.extend("Player",{
 
 
     if(this.p.y > 1000) {
-      this.stage.unfollow();
+      //this.stage.unfollow();
     }
 
     if(this.p.y > 2000) {
@@ -382,6 +382,8 @@ Q.Collectable.extend("Heart", {
   }
 });
 
+
+
 Q.scene("level1",function(stage) {
   Q.stageTMX("level1.tmx",stage);
 
@@ -401,6 +403,36 @@ Q.scene('hud',function(stage) {
     label: "Health: " + stage.options.strength + '%', color: "white" }));
 
   container.fit(20);
+});
+
+Q.scene('start',function(stage) {
+	var title = stage.insert(new Q.UI.Text({ x:Q.width/2, y:Q.height/2,
+					label: "EXTRACTION", color: "black"}));
+					
+	var playbutton = stage.insert(new Q.UI.Text({ x:Q.width/2, y:Q.height/2 + 50,
+					label: "Click here to play", color: "black"}));
+					
+	playbutton.on('touch', function(){
+		Q.clearStages();
+		Q.stageScene('level1');
+		Q.stageScene('hud', 3, Q('Player').first().p);
+	
+	});
+});
+
+Q.scene('die',function(stage) {
+	var title = stage.insert(new Q.UI.Text({ x:Q.width/2, y:Q.height/2,
+					label: "YOU HAVE FAILED TO BE EXTRACTED", color: "black"}));
+					
+	var playbutton = stage.insert(new Q.UI.Text({ x:Q.width/2, y:Q.height/2 + 50,
+					label: "Click here to try again", color: "black"}));
+					
+	playbutton.on('touch', function(){
+		Q.clearStages();
+		Q.stageScene('level1');
+		Q.stageScene('hud', 3, Q('Player').first().p);
+					
+	});				
 });
 
 Q.loadTMX("level1.tmx, collectables.json, doors.json, enemies.json, fire.mp3, jump.mp3, heart.mp3, hit.mp3, coin.mp3, player.json, player.png", function() {
@@ -426,8 +458,9 @@ Q.loadTMX("level1.tmx, collectables.json, doors.json, enemies.json, fire.mp3, ju
     Q.animations("fly", EnemyAnimations);
     Q.animations("slime", EnemyAnimations);
     Q.animations("snail", EnemyAnimations);
-    Q.stageScene("level1");
-    Q.stageScene('hud', 3, Q('Player').first().p);
+    //Q.stageScene("level1");
+    Q.stageScene('start');
+    //Q.stageScene('hud', 3, Q('Player').first().p);
   
 }, {
   progressCallback: function(loaded,total) {

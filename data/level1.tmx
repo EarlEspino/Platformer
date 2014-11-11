@@ -7,6 +7,91 @@
     <property name="Class" value="Player"/>
    </properties>
   </tile>
+  <tile id="1">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
  </tileset>
  <tileset firstgid="19" name="doors" tilewidth="70" tileheight="110">
   <image source="../images/doors.png" width="140" height="110"/>
@@ -55,7 +140,7 @@
    </properties>
   </tile>
  </tileset>
- <imagelayer name="Background" x="25" y="136">
+ <imagelayer name="Background">
   <image source="../images/space.jpg"/>
  </imagelayer>
  <layer name="Collision" width="200" height="20">
