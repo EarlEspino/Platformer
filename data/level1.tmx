@@ -105,7 +105,10 @@
    </properties>
   </tile>
  </tileset>
- <imagelayer name="Background" visible="0">
+ <tileset firstgid="225" name="moon" tilewidth="70" tileheight="70">
+  <image source="../images/moon.jpeg" width="204" height="204"/>
+ </tileset>
+ <imagelayer name="Background" x="-1400" y="-642" visible="0">
   <image source="../images/bg.png"/>
  </imagelayer>
  <layer name="Collision" width="200" height="20">
@@ -113,13 +116,13 @@
    <property name="collision" value="true"/>
   </properties>
   <data>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="225"/>
+   <tile gid="225"/>
+   <tile gid="226"/>
+   <tile gid="226"/>
+   <tile gid="225"/>
+   <tile gid="226"/>
+   <tile gid="226"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -313,15 +316,15 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="227"/>
+   <tile gid="225"/>
+   <tile gid="226"/>
+   <tile gid="228"/>
+   <tile gid="227"/>
+   <tile gid="228"/>
+   <tile gid="225"/>
+   <tile gid="226"/>
+   <tile gid="226"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -513,15 +516,15 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="227"/>
+   <tile gid="227"/>
+   <tile gid="228"/>
+   <tile gid="227"/>
+   <tile gid="225"/>
+   <tile gid="225"/>
+   <tile gid="227"/>
+   <tile gid="228"/>
+   <tile gid="228"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -713,14 +716,14 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="227"/>
+   <tile gid="228"/>
+   <tile gid="226"/>
+   <tile gid="226"/>
+   <tile gid="227"/>
+   <tile gid="227"/>
+   <tile gid="225"/>
+   <tile gid="226"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -913,14 +916,14 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="227"/>
+   <tile gid="228"/>
+   <tile gid="226"/>
+   <tile gid="228"/>
+   <tile gid="228"/>
+   <tile gid="226"/>
+   <tile gid="225"/>
+   <tile gid="226"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1113,14 +1116,14 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="227"/>
+   <tile gid="228"/>
+   <tile gid="228"/>
+   <tile gid="227"/>
+   <tile gid="228"/>
+   <tile gid="228"/>
+   <tile gid="227"/>
+   <tile gid="228"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1313,12 +1316,12 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="225"/>
+   <tile gid="226"/>
+   <tile gid="225"/>
+   <tile gid="226"/>
+   <tile gid="225"/>
+   <tile gid="226"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1513,12 +1516,12 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="227"/>
+   <tile gid="228"/>
+   <tile gid="227"/>
+   <tile gid="228"/>
+   <tile gid="227"/>
+   <tile gid="228"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1920,8 +1923,8 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="4"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="225"/>
+   <tile gid="226"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -2120,8 +2123,8 @@
    <tile gid="0"/>
    <tile gid="25"/>
    <tile gid="73"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="227"/>
+   <tile gid="228"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -4129,7 +4132,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Sprites" visible="0">
+ <objectgroup name="Sprites">
   <object gid="157" x="235" y="820"/>
   <object gid="176" x="1120" y="1120"/>
   <object gid="176" x="1190" y="1120"/>
