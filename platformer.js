@@ -15,11 +15,7 @@ window.addEventListener("load",function() {
 var Q = window.Q = Quintus({audioSupported: [ 'wav','mp3','ogg' ]})
         .include("Sprites, Scenes, Input, 2D, Anim, Touch, UI, TMX, Audio")
         // Maximize this game to whatever the size of the browser is
-        .setup({ 
-        	//scaleToFit: true,
-        	height: 1000,
-        	width: 1000
-        })
+        .setup({ maximize: true })
         // And turn on default input controls and touch input (for UI)
         .controls(true).touch()
         // Enable sounds.
@@ -406,11 +402,10 @@ Q.scene('hud',function(stage) {
   container.fit(20);
 });
 
-Q.loadTMX("level1.tmx,tiles2.png, collectables.json, doors.json, enemies.json, fire.mp3, jump.mp3, heart.mp3, hit.mp3, coin.mp3, player.json, player.png", function() {
+Q.loadTMX("level1.tmx, collectables.json, doors.json, enemies.json, fire.mp3, jump.mp3, heart.mp3, hit.mp3, coin.mp3, player.json, player.png", function() {
     Q.compileSheets("player.png","player.json");
     Q.compileSheets("collectables.png","collectables.json");
     Q.compileSheets("enemies.png","enemies.json");
-    Q.compileSheets("tiles2.png");
     Q.compileSheets("doors.png","doors.json");
     Q.animations("player", {
       walk_right: { frames: [0,1,2,3,4,5,6,7,8,9,10], rate: 1/15, flip: false, loop: true },
