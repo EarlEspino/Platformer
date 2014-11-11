@@ -17,8 +17,8 @@ var Q = window.Q = Quintus({audioSupported: [ 'wav','mp3','ogg' ]})
         // Maximize this game to whatever the size of the browser is
         .setup({ 
         	scaleToFit: true,
-        	height: 1000,
-        	width: 1000
+        	height: 20,
+        	width: 200
         })
         // And turn on default input controls and touch input (for UI)
         .controls(true).touch()
