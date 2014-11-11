@@ -16,8 +16,8 @@ var Q = window.Q = Quintus({audioSupported: [ 'wav','mp3','ogg' ]})
         .include("Sprites, Scenes, Input, 2D, Anim, Touch, UI, TMX, Audio")
         // Maximize this game to whatever the size of the browser is
         .setup({ 
-        	scaleToFit: true,
-        	height: 20,
+        	//scaleToFit: true,
+        	height: 200,
         	width: 200
         })
         // And turn on default input controls and touch input (for UI)
